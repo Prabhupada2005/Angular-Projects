@@ -1,0 +1,79 @@
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Role Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let role of roleList;let srno=index">
+                    <td>{{srno+1}}</td>
+                    <td>{{role.role}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- <div class="row">
+    <div class="col-4">
+        <ul>
+            <li *ngFor="let item of roleList">{{item.role}}</li>
+        </ul>
+    </div>
+    <div class="col-4">
+       <select>
+        <option *ngFor="let role of roleList"[value]="role.roleId">{{role.role}}</option>
+       </select>
+    </div>
+    <div class="col-4">
+        <button class="btn-btn-warning" *ngFor="let item of roleList">{{item.role}}</button>
+    </div>
+</div> -->
+
+<!-- <p>roles works!</p>
+<div class="row"> 
+    <div class="col-3"> 
+        <p> {{firstname}}</p>
+    </div>
+    <div class="col-3"> 
+        <p>{{Version}}</p>
+    </div>
+    <div class="col-3"> 
+        <p>{{currentDate}}</p>
+    </div>
+    <div class="class col-3">
+        {{selectedState}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <input type="text" [value]="firstname" class="form-control"/>
+    </div>
+    <div class="col-3">
+        <input type="text"[(ngModel)]="firstname"/>
+    </div>
+    <div class="col-3">
+        <input [type]=" inputType"/>
+    </div>
+    <div class="col-3">
+        <select [(ngModel)]="selectedState">
+            <option value="OD">Odisha</option>
+            <option value="WB">West Bengal</option>
+            <option value="MP">Maharashtra</option>
+        </select>
+    </div>
+
+
+    <div class="class row">
+        <div class="class col-3">
+            <button class="btn-btn-success"(click)="showWelcomeAlert()">Show Alert</button>
+        </div>
+        <div class="class col-3">
+                <button class="btn-btn-success"(click)="showMessage('Welcome React')">Show React Msg</button>
+        </div>
+        <div class="class col-3">
+            <button class="btn-btn-success"(click)="showMessage('Welcome Dot Net')">Show Dot Net Msg</button>
+    </div>
+</div> -->
